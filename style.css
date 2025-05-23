@@ -1070,3 +1070,9 @@ header > *,
 }
 
 
+@media (max-width: 600px) {
+  #contacto h2 {
+    font-size: 10vw;          /* Escala proporcional à largura da tela */
+    white-space: nowrap;     /* Impede quebra de linha */
+  }
+}
