@@ -1,0 +1,1072 @@
+
+.mobile-menu {
+    display: none;
+}
+
+/* Aplicar como padrão para todo o site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Ou a fonte escolhida */
+}
+
+
+#contact-form textarea {
+  font-family: 'Almarena Neue', sans-serif;
+}
+
+.espaco-fotografica {
+  letter-spacing: 1.5px;
+  color: #cd0000 !important;
+  font-style: normal !important;
+  font-weight: 700; /* opcional: deixar mais forte */
+}
+
+
+/* Só para botões */
+.btn-reserve,
+.hero button,
+#contact-form button {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+body {
+    
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.no-font {
+  font-family: 'Almarena Neue', sans-serif; /* ou a fonte padrão do body */
+
+}
+
+/* Seções */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+
+/* Header e Menu */
+nav {
+    background: transparent;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* espaçamento entre logo e menu */
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 35px; /* espaçamento entre o topo da página e o menu */
+}
+
+.logo {
+    height: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* espaçamento maior como na imagem */
+    
+}
+
+nav a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+/* Efeito de fundo vermelho ao passar o mouse */
+nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #B30000;
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Imagem de fundo no HEADER (nav + hero) */
+header {
+    background-image: url('img/vvstudios-camera-off.png'); /* Altere para o caminho correto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff;
+}
+
+/* Overlay escurecido opcional */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.418); /* pode ajustar a opacidade */
+    z-index: 0;
+}
+
+
+/* Garante que nav e hero fiquem visíveis acima do overlay */
+header > *,
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* ocupa a altura inteira da tela */
+    padding: 20px;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    line-height: 1.1; /* ou 1.0 para ainda mais fechado */
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 15px 40px;
+    background-color: #cd0000;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* animação suave */
+
+}
+
+.hero button:hover {
+    transform: scale(1.05); /* zoom leve ao passar o mouse */
+    background-color: #eb0000;
+}
+/* FIM Menu-INICIO  */
+
+/* Carroussel-section */
+
+.carousel-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    padding: 40px 0;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 71px;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;    /* Largura aumentada */
+    height: 220px;   /* Altura diminuída */
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+}
+
+.arrow:hover {
+    color: #eb0000;
+}
+
+/* FIM Carroussel */
+
+
+
+/* Section - Nossa História */
+#nossa-historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 40px;
+    background-color: #F5F5F5;
+    flex-wrap: wrap;
+}
+
+#nossa-historia .text-content {
+    flex: 1 1 500px;
+    max-width: 600px;
+    text-align: left;
+}
+
+#nossa-historia .text-content h2 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    color: #000000;
+}
+
+#nossa-historia .text-content h2 .red {
+    color: #cd0000;
+}
+
+#nossa-historia .text-content p {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #333333;
+    line-height: 1.5;
+}
+
+
+#nossa-historia .image-content {
+    flex: 1 1 400px;
+    max-width: 700px;
+    width: 400px; /* Largura fixa para a imagem */
+    height: 680px; /* Altura fixa para a imagem */
+}
+
+#nossa-historia .image-content img {
+    width: 600px;
+    height: 650px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+/* FIM - Nossa História */
+
+
+
+/* Seção Cards */
+
+.card-gestante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+}
+
+.card-text,
+.card-image {
+    width: 600px;   /* Mesma largura */
+    height: 680px;  /* Mesma altura */
+    border-radius: 30px;
+}
+
+/* Card Texto */
+.card-text {
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-text h2 {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn-reserve {
+    padding: 15px 30px;
+    background-color: #cd0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.btn-reserve:hover {
+    transform: scale(1.05);
+    background-color: #eb0000;
+}
+
+.btn-reserve {
+  text-decoration: none; /* remove o sublinhado */
+  display: inline-block; /* garante aparência de botão */
+  padding: 15px 30px;
+  background-color: #cd0000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-reserve:hover {
+  transform: scale(1.05);
+  background-color: #eb0000;
+  color: #ffffff;
+}
+
+/* Card Imagem */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    
+}
+
+/* Fim -  Cards */
+
+
+
+/* Section Portfólio */
+
+.section-compact {
+  margin-top: -250px; /* ou ajuste como preferir */
+}
+
+
+.portfolio-section {
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.portfolio-title {
+    font-size: 4rem;
+    margin-bottom: 60px;
+    color: #cd0000;
+    letter-spacing: 3px; /* leve espaçamento */
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.portfolio-left {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.portfolio-left img {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1.3)  translateY(-10%) translateX(-5%);
+}
+
+
+
+.portfolio-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolio-right img {
+    width: 300px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.portfolio-section button.btn-reserve {
+    margin-top: 40px;
+}
+
+.espelhar-horizontal {
+    transform: scaleX(-1);/* foto pequena 2 */
+}
+
+.ajuste-vertical {
+    position: relative;
+    width: 380%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(200px); /* desce visualmente a imagem */
+}
+
+
+
+/* FIM - Portfólio */
+
+
+
+/* Section Formulário */
+.form-section {
+    padding: 80px 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact-form input {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    height: 250px; /* AUMENTADO */
+    resize: vertical; /* permite redimensionar se quiser */
+}
+
+#contact-form button {
+    padding: 15px;
+    background-color: #cd0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    
+    
+}
+
+#contact-form button:hover {
+    background-color: #eb0000;
+    color: #ffffff;
+}
+
+#mensagem-enviada {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  background-color: #ffffff;
+  color: #cd0000;
+  border: 1px solid #c3e6cb00;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mensagem-enviada.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilo base do botão */
+#menu-toggle {
+  display: none;
+  background: none;
+  font-size: 32px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 1100;
+}
+
+/* Segunda seção Portfólio - independente */
+.portfolio-left2 {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.portfolio-left2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: none; /* Ajuste livre: adicione zoom ou posição se desejar */
+}
+
+.portfolio-right2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolio-right2 img {
+    width: 300px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+/* IMAGEM DO CARA DE TERNO */
+.portfolio-right2 img:first-child {
+  object-fit: contain; /* para ajustar o zoom */
+  object-position: center bottom; /* desce o corpo */
+  background-color: rgb(158, 158, 158); /* caso contenha fundo transparente */
+}
+
+/* IMAGEM DA LORENA */
+.portfolio-right2 img.espelhar-horizontal {
+  object-fit: cover;
+  object-position: center top; /* sobe o foco para não cortar o rosto */
+  transform: scaleX(-1);
+  margin-top: 20px; /* opcional se quiser descer mais */
+}
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #cd0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.servicos-section {
+  padding: 80px 40px;
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+  text-align: center;
+}
+
+.servicos-section h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #cd0000;
+  font-weight: bold;
+
+}
+
+.servicos-subtitulo {
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.servico-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.servico-box:hover {
+  transform: translateY(-8px);
+}
+
+.servico-box h3 {
+  font-size: 1.6rem;
+  color: #cd0000;
+  margin-bottom: 15px;
+}
+
+.servico-box p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.servico-box span {
+  color: #888;
+  font-style: italic;
+}
+
+.coming-soon {
+  opacity: 0.8;
+  border: 2px dashed #b30000;
+}
+
+/* ESTADO INICIAL */
+.animate,
+.animate-left,
+.animate-right,
+.animate-top,
+.animate-bottom {
+  opacity: 0;
+  transition: all 1s ease-out; /* ⬅️ aumentei para 1s */
+}
+
+/* POSIÇÕES DE ENTRADA */
+.animate-top    { transform: translateY(-80px); }
+.animate-bottom { transform: translateY(80px); }
+.animate-left   { transform: translateX(-80px); }
+.animate-right  { transform: translateX(80px); }
+
+/* QUANDO APARECER */
+.show-animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .servicos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .servico-box {
+    flex: 1 1 22%;
+    max-width: 300px;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+    #portfolio-mobile {
+        display: none; /* Esconde o portfólio mobile em telas maiores */
+    }
+}
+/* Por padrão, esconda a versão mobile no desktop */
+#nossa-historia-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Mostra a versão mobile e esconde a desktop */
+  #nossa-historia {
+    display: none !important;
+  }
+
+  #nossa-historia-mobile {
+    display: block;
+    padding: 60px 20px;
+  }
+
+  #nossa-historia-mobile .text-content-mobile {
+    background-color: #ffffff;
+    padding: 70px 25px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  #nossa-historia-mobile .text-content-mobile h2 {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+ #nossa-historia-mobile .text-content-mobile h2 .red {
+    color: #cd0000;
+  }
+  #nossa-historia-mobile .text-content-mobile p {
+    font-size: 1.1rem;
+    line-height: 2;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    
+  }
+}
+
+
+/* Versão MOBILE some no DESKTOP */ 
+  @media (max-width: 768px) {
+
+  #nossa-historia {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nossa-historia .text-content {
+    background-color: #ffffff;
+    padding: 70px 25px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 95%;
+  }
+
+  #nossa-historia .text-content h2 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+
+  #nossa-historia .text-content p {
+    font-size: 0.8rem;
+    line-height: 0.1;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 20px;
+    max-width: 100%;
+    text-align: left;         /* Alinha cada parágrafo à esquerda */
+    display: block;
+    margin-left: 100px; /* Adiciona margem à esquerda */
+    margin-right: 80px; /* Adiciona margem à direita */
+  }
+
+}
+
+
+
+
+/* === RESPONSIVIDADE === */
+/* === BASE === *//* === RESPONSIVO ATÉ 768px === */
+@media (max-width: 768px) {
+
+  /* Esconde conteúdo desnecessário no mobile */
+  #fotos,
+  .card-gestante,
+  #nossa-historia .image-content,
+  .portfolio-section {
+    display: none !important;
+  }
+
+  /* Novo portfólio mobile */
+  #portfolio-mobile {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+
+  #portfolio-mobile h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #cd0000;
+  }
+
+  #portfolio-mobile .portfolio-mobile-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  #portfolio-mobile .portfolio-mobile-grid img {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+.ajuste-consultoria {
+  object-position: center top;
+}
+
+.ajuste-lorena {
+  object-position: center top;
+}
+
+  /* Outros ajustes mobile */
+  .logo {
+    height: 120px;
+    margin-top: -30px;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+.nav-content ul {
+  display: none; /* Esconde o menu desktop no mobile */
+  
+}
+
+
+  .hero {
+    padding: 60px 20px;
+    height: auto;
+    text-align: center;
+    z-index: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    width: auto;
+    max-width: 90%;
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 71px;
+    padding: 10px;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+
+  #nossa-historia {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 0 !important;
+  }
+
+  #nossa-historia .text-content {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #nossa-historia .text-content h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  #nossa-historia .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .form-section {
+    padding: 40px 20px;
+  }
+
+  #contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form button {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Esconde o menu desktop */
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Mostra o botão hambúrguer */@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: -100%;              /* Começa fora da tela acima */
+    left: 0;                 /* Alinhado à esquerda */
+    width: 100vw;            /* Largura total */
+    height: 52vh;            /* Altura definida */
+    background-color: #cd0000;
+    padding: 40px 30px 0 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1099;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    gap: 40px;
+    transition: top 0.4s ease; /* Animação agora é no TOP */
+    font-family: Arial, sans-serif; /* 👈 Aqui você aplica a nova fonte */
+  }
+
+  .mobile-menu.show {
+    top: 0; /* Desce para a tela */
+  }
+
+  .mobile-menu li {
+    list-style: none;
+  }
+
+  .mobile-menu li a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1098;
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .btn-reserve {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 30px 20px 40px !important;
+    height: auto !important;
+  }
+
+  header {
+    height: auto !important;
+    padding-top: 0 !important;
+  }
+
+  .nav-content {
+    margin-top: 0 !important;
+  }
+}
+
+

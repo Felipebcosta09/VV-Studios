@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VV Studios</title>
+  <link rel="icon" href="img\logo-menu.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!-- Exemplo com Playfair Display -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+<header>
+
+
+<nav>
+  <!-- Menu Desktop -->
+  <div class="nav-content desktop-only">
+    <img src="img/logo-menu.png" alt="VV Studios Logo" class="logo">
+    <ul class="animate-right">
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#nossa-historia">Nossa História</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- Menu Mobile -->
+  <button id="menu-toggle" class="hamburger">&#9776;</button>
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#portfolio-mobile">Portfólio</a></li>
+    <li><a href="#nossa-historia-mobile">Nossa História</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <div class="menu-overlay" id="menu-overlay"></div>
+</nav>
+
+
+
+  <div class="hero">
+    <h1 class="animate-left">Fotografia profissional<br>de excelência.</h1>
+    <p class="animate-left">Tire as suas ideias do papel com a VV.</p>
+    <a id="contacteNos" href="https://wa.me/351911825556" target="_blank" class="btn-reserve animate-right">CONTACTE NOS</a>
+  </div>
+</header>
+
+
+<section id="fotos" class="carousel-section animate-right">
+
+
+    <button class="arrow left">&lt;</button>
+    <div class="carousel">
+      <!--  <img src="img/back-black.jpg" alt="Imagem 1" class="carousel-item">
+        <img src="img/back-black.jpg" alt="Imagem 2" class="carousel-item"> -->
+        <img src="img/fotos-sitevvstudios/familia-beijo.jpg" alt="Imagem 3" class="carousel-item">
+        <img src="img\filho-pri-violao.jpg" alt="Imagem 4" class="carousel-item">
+        <img src="img/fotos-sitevvstudios/barriga-ana.jpg" alt="Imagem 5" class="carousel-item">
+        <img src="img/fotos-sitevvstudios/harvey.jpg" alt="Imagem 6" class="carousel-item">
+        <!--<img src="img/back-black.jpg" alt="Imagem 7" class="carousel-item">
+        <img src="img/back-black.jpg" alt="Imagem 8" class="carousel-item"> -->
+    </div>
+    <button class="arrow right">&gt;</button>
+</section>
+
+
+
+<section id="nossa-historia" class="why-vv">
+    <div class="text-content animate-left">
+
+
+<h2>
+    Por que <span class="red">escolher</span><br>
+    <span class="red">a VV Studios</span>
+</h2>
+
+
+    <p>Na VV Studios, não captamos apenas <br>imagens, captamos o que há de mais <br> valioso em cada momento: a sua <br>essência, a sua história, o seu sonho.
+    <br>Somos especialistas em transformar <br>ideias em imagens que falam por si.
+        <br>Se procura mais do que uma simples <br>sessão fotográfica a VV Studios <br> é a escolha certa.</p>
+    </div>
+    <div class="image-content animate-right">
+        <img src="img\filho-pri1.jpg" alt="Menina com flores">
+    </div>
+</section>
+
+<section id="nossa-historia-mobile" class="why-vv">
+  <div class="text-content-mobile animate-left">
+    <h2>
+      Por que <span class="red">escolher</span><br>
+      <span class="red">a VV Studios</span>
+    </h2>
+
+    <p>
+      Na VV Studios, não captamos apenas imagens,
+      captamos o que há de mais valioso em cada momento:
+      a sua essência, a sua história, o seu sonho.
+      Somos especialistas em transformar ideias
+      em imagens que falam por si.
+      Se procura mais do que uma simples sessão fotográfica,
+      a VV Studios é a escolha certa.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="card-gestante">
+  <div class="card-text animate-left">
+    <h2>À espera<br>do bebê.</h2>
+    <p>É um tempo de silêncio cheio de significado, de olhares que falam mais alto, de sonhos que se tornam palpáveis dentro de um ventre. Cada batimento do coração do bebê é como um sussurro do futuro a dizer: “estou a caminhoˮ.</p>
+    <a href="https://wa.me/351911825556" target="_blank" class="btn-reserve">RESERVE CONNOSCO</a>
+  </div>
+
+  <div class="card-image animate-right">
+    <img src="img/fotos-sitevvstudios/gravida-13.jpg" alt="Gestante com flores">
+  </div>
+</section>
+
+<section class="card-gestante">
+  <div class="card-image animate-left">
+    <img src="img/fotos-sitevvstudios/familia.jpg" alt="Família reunida">
+  </div>
+
+  <div class="card-text animate-right">
+    <h2><span class="highlight-bg">Família</span></h2>
+    <p>São risos que ecoam, abraços que acolhem e memórias que merecem ser eternizadas.
+      Na VV Studios, captamos mais do que imagens, guardamos instantes que contam a sua história.
+    </p>
+    <a href="https://wa.me/351911825556" target="_blank" class="btn-reserve">RESERVE CONNOSCO</a>
+  </div>
+</section>
+
+
+<section id="portfolio-mobile">
+  <h2 class="animate-top">Portfólio</h2>
+  <div class="portfolio-mobile-grid animate-bottom">
+    <img src="img/fotos-sitevvstudios/casal-gravida.jpg" alt="Casal grávida">
+    <img src="img/fotos-sitevvstudios/crianças.jpg" alt="Crianças">
+    <img src="img/fotos-sitevvstudios/barriga-ana.jpg" alt="Barriga Ana">
+    <img src="img/fotos-sitevvstudios/Consultoria__1_-removebg-preview.png" alt="Consultoria" class="ajuste-consultoria">
+<img src="img/fotos-sitevvstudios/WhatsApp Image 2025-05-16 at 12.46.21 (3).jpeg.jpg" alt="Lorena" class="ajuste-lorena">
+
+    <img src="img/fotos-sitevvstudios/Thaina-13 (1).jpg" alt="Thaina">
+  </div>
+</section>
+
+
+<section id="servicos" class="servicos-section">
+  <h2 class="animate-top"><span class="highlight">Nossos Serviços</span></h2>
+
+  <p class="servicos-subtitulo">Aluguer disponível por hora, dia ou mensal.</p>
+
+  <div class="servicos-grid animate-bottom">
+    <div class="servico-box">
+      <h3>📸 Sessões <span class="espaco-fotografica">Fotográficas</span></h3>
+
+      <p>No estúdio ou ao ar livre, com direção personalizada e luz profissional.</p>
+    </div>
+
+    <div class="servico-box">
+      <h3>🏢 Aluguer para Produções</h3>
+      <p>Use nosso espaço para fotografia e vídeo com total liberdade criativa.</p>
+    </div>
+
+    <div class="servico-box">
+    <h3>🎓 Workshops <br><span class="no-font">&</span> Reuniões</h3>
+
+<p>Ambiente acolhedor e equipado para eventos formativos e encontros.</p>
+    </div>
+
+    <div class="servico-box coming-soon">
+      <h3>🎙️ Podcast <span>(brevemente)</span></h3>
+<p>
+  Espaço totalmente acústico e equipado, ideal para gravações de podcast com qualidade profissional em áudio e vídeo.
+</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio"  class="portfolio-section">
+    <h2 class="portfolio-title">Portfólio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-left animate-left">
+            <img src="img/fotos-sitevvstudios/casal-gravida.jpg" alt="Casal-gravida">
+        </div>
+        <div class="portfolio-right animate-right">
+            <img src="img\filho da pri.jpg" alt="Crianças">
+            <img src="img/fotos-sitevvstudios/barriga-ana.jpg" alt="preto-branco barriga 2">
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio-section">
+    <div class="portfolio-grid invertido">
+        <div class="portfolio-right2 animate-left">
+            <img src="img/fotos-sitevvstudios/Consultoria__1_-removebg-preview.png" alt="cara de terno">
+            <img src="img/fotos-sitevvstudios/WhatsApp Image 2025-05-16 at 12.46.21 (3).jpeg.jpg" alt="Lorena" class="espelhar-horizontal">
+        </div>
+        <div class="portfolio-left2 animate-right">
+            <img src="img/fotos-sitevvstudios/Thaina-13 (1).jpg" alt="doutoura thaina"class="ajuste-vertical">
+        </div>
+    </div>
+    <a href="https://wa.me/351911825556" target="_blank" class="btn-reserve  animate-bottom">RESERVE CONNOSCO</a>
+</section>
+
+
+
+<section id="contacto" class="form-section animate-top">
+  <h2 class="animate-top">Reserve connosco</h2>
+  
+  <form id="contact-form">
+    <input type="text" id="nome" name="nome" placeholder="Nome:" required class="animate-bottom">
+    <input type="email" id="email" name="email" placeholder="E-mail:" required class="animate-bottom">
+    <input type="text" id="telemovel" name="telemovel" placeholder="Telemóvel:" required class="animate-bottom">
+    <textarea id="mensagem" name="mensagem" placeholder="Tua mensagem." required class="animate-bottom"></textarea>
+    <button type="submit" class="animate-bottom">Enviar</button>
+    
+    <p id="mensagem-enviada" color: rgb(208, 0, 0); margin-top: 10px;">
+      Mensagem enviada com sucesso!
+    </p>
+  </form>
+</section>
+
+
+<button id="scrollTopBtn" title="Voltar ao topo">↑</button>
+
+
+
+<script src="script.js"></script> <!-- seu script de carrossel, menu etc -->
+
+
+
+</body>
+</html>
