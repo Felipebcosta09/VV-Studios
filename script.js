@@ -127,3 +127,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// Lightbox simples para imagens
+document.querySelectorAll("#portfolio-mobile img").forEach(img => {
+  img.addEventListener("click", () => {
+    const modal = document.getElementById("imagemModal");
+    const imagemAmpliada = document.getElementById("imagemAmpliada");
+
+    imagemAmpliada.src = img.src;
+    modal.style.display = "block";
+  });
+});
+
+document.querySelector(".fechar").addEventListener("click", () => {
+  document.getElementById("imagemModal").style.display = "none";
+});

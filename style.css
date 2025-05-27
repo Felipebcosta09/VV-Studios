@@ -18,6 +18,30 @@ body, p, input, textarea, button {
   font-weight: 400;
 }
 
+.logo-mobile {
+  display: none;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.logo-mobile img {
+  height: 150px;
+  width: auto;
+}
+
+/* Exibir apenas no mobile */
+@media (max-width: 768px) {
+  .logo-mobile {
+    display: block;
+  }
+
+  /* Se quiser esconder a logo do menu desktop no mobile */
+  .desktop-only .logo {
+    display: none;
+  }
+}
+
+
 
 #contact-form textarea {
   font-family: 'Almarena Neue', sans-serif;
@@ -1108,4 +1132,42 @@ header > *,
     font-size: 10vw;          /* Escala proporcional à largura da tela */
     white-space: nowrap;     /* Impede quebra de linha */
   }
+}
+
+.ajuste-menina-arte {
+  object-position: left center;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.imagem-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.imagem-modal-conteudo {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.fechar {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
