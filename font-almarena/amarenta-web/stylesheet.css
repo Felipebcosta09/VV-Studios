@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Almarena Neue';
+    src: url('AlmarenaNeue-Black-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Black-It.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue';
+    src: url('AlmarenaNeue-Bold-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Bold-It.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue';
+    src: url('AlmarenaNeue-Black.woff2') format('woff2'),
+        url('AlmarenaNeue-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue';
+    src: url('AlmarenaNeue-Bold.woff2') format('woff2'),
+        url('AlmarenaNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Bold.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Black.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Black-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Black-It.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-ExtraBold.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Bold-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Bold-It.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display ExLight';
+    src: url('AlmarenaNeue-Ds-ExtraLight-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-ExtraLight-It.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Medium.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-ExtraBold-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-ExtraBold-It.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Light-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Light-It.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display ExLight';
+    src: url('AlmarenaNeue-Ds-Extralight.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Light.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-SemiBold.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Regular.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Medium-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Medium-It.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena Neue Display';
+    src: url('AlmarenaNeue-Ds-Regular-It.woff2') format('woff2'),
+        url('AlmarenaNeue-Ds-Regular-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
