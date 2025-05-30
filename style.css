@@ -1,3 +1,4 @@
+@import url('./almarena-style.css');
 
 .mobile-menu {
     display: none;
@@ -11,7 +12,10 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif; /* Ou a fonte escolhida */
+  font-family: 'Almarena Neue Display', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 body, p, input, textarea, button {
   font-family: 'Poppins', sans-serif;
